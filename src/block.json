@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/decibel-range-slider",
+	"version": "0.1.0",
+	"title": "Decibel Range Slider",
+	"category": "widgets",
+	"icon": "admin-site",
+	"description": "An interactive block with the Interactivity API.",
+	"example": {},
+	"supports": {
+		"interactivity": true
+	},
+	"attributes": {
+		"decibelValue": {
+			"type": "number",
+			"value": 70
+		}
+	},
+	"textdomain": "decibel-range-slider",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScriptModule": "file:./view.js"
+}
