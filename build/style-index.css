@@ -9,9 +9,9 @@
  */
 .wp-block-create-block-decibel-range-slider {
   font-size: 1em;
-  background: orangered;
   padding: 1em;
   border-radius: 10px;
+  transition: all 0.5s ease;
 }
 .wp-block-create-block-decibel-range-slider.dark-theme {
   background: #333;
@@ -24,6 +24,10 @@
 }
 .wp-block-create-block-decibel-range-slider.dark-theme p {
   color: #ddd;
+}
+
+.decibel-slider-wrapper {
+  transition: all 0.5s ease;
 }
 
 /*# sourceMappingURL=style-index.css.map*/

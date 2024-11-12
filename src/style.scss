@@ -8,9 +8,10 @@
 
 .wp-block-create-block-decibel-range-slider {
 	font-size: 1em;
-	background: orangered;
+	// background: orangered;
 	padding: 1em;
 	border-radius: 10px; 
+	transition: all .5s ease; 
 
 	&.dark-theme {
 		background: #333;
@@ -26,4 +27,8 @@
 			color: #ddd;
 		}
 	}
+}
+
+.decibel-slider-wrapper{
+	transition: all .5s ease; 
 }
