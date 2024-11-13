@@ -32,17 +32,17 @@ const { state } = store( 'create-block', {
 			//console.log('range moving', context.decibelValue);
 
 			if( context.decibelValue <= 20 ){
-				context.clipPath = 'polygon(0 0, 10% 0, 10% 100%, 0 100%)';
+				context.clipPath = 'polygon(0 0, 14% 0, 14% 100%, 0 100%)';
 			} else if( context.decibelValue <= 40){
-				context.clipPath = 'polygon(0 0, 25% 0, 25% 100%, 0 100%)';
+				context.clipPath = 'polygon(0 0, 28% 0, 28% 100%, 0 100%)';
 			} else if( context.decibelValue <= 60){
-				context.clipPath = 'polygon(0 0, 35% 0, 35% 100%, 0 100%)';
+				context.clipPath = 'polygon(0 0, 42% 0, 42% 100%, 0 100%)';
 			} else if( context.decibelValue <= 80){
-				context.clipPath = 'polygon(0 0, 50% 0, 50% 100%, 0 100%)';
+				context.clipPath = 'polygon(0 0, 56% 0, 56% 100%, 0 100%)';
 			} else if( context.decibelValue <= 100){
 				context.clipPath = 'polygon(0 0, 70% 0, 70% 100%, 0 100%)';
 			} else if( context.decibelValue <= 120){
-				context.clipPath = 'polygon(0 0, 80% 0, 80% 100%, 0 100%)';
+				context.clipPath = 'polygon(0 0, 84% 0, 84% 100%, 0 100%)';
 			} else {
 				context.clipPath = 'polygon(0 0, 100% 0, 100% 100%, 0 100%)';
 			} 
