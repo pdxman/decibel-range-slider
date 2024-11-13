@@ -3,7 +3,8 @@
 $context = array(
 	'decibelValue' => 0,
 	'backgroundColor' => '#006400',
-	'isChecked' => 'false'
+	'isChecked' => 'false',
+	'clipPath' => 'polygon(0 0, 0 0, 0 100%, 0% 100%)'
 )
 
 ?>
@@ -15,8 +16,18 @@ $context = array(
 	data-wp-style--background="context.backgroundColor"
 	data-wp-on--input="actions.updateColor"
 >
-	<h2 class="decibel-number">Decibel Number <span id="decibelDisplay" data-wp-text="context.decibelValue"></span></h2>
-	<div class="meter-wrapper">
+	<h2 class="decibel-number">
+		Decibel Number:
+		<span 
+			id="decibelDisplay"
+			data-wp-text="context.decibelValue"
+		>
+		</span>
+	</h2>
+	<div 
+		class="meter-wrapper"
+		data-wp-style--clip-path="context.clipPath"
+	>
 			<div class="meter meter-green"></div>
 			<div class="meter meter-green"></div>
 			<div class="meter meter-green"></div>
