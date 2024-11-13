@@ -12,6 +12,7 @@
 	padding: 1em;
 	border-radius: 10px; 
 	transition: all .5s ease; 
+	color: #fff; 
 
 	&.dark-theme {
 		background: #333;
@@ -31,4 +32,42 @@
 
 .decibel-slider-wrapper{
 	transition: all .5s ease; 
+}
+
+h2.decibel-number{
+	color: #fff ; 
+	margin-bottom: 0;
+}
+
+#myRange{
+	border: none; 
+}
+
+.meter-wrapper{
+	display: flex;
+	flex-flow: row; 
+	gap: .25em; 
+	margin-top: 1em;
+	margin-bottom: 1em;
+	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.meter {
+	// width: .25em;
+	height: 2em;
+	border-radius: 5px; 
+	flex: 0 1 .5em;
+	// background: green;
+}
+
+.meter-green{
+	background: green;
+}
+
+.meter-yellow{
+	background: yellow;
+}
+
+.meter-red{
+	background: red;
 }

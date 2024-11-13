@@ -74,6 +74,11 @@ const {
     }
   },
   actions: {
+    updateCheckbox() {
+      const context = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)();
+      context.isChecked = !context.isChecked;
+      console.log(context.isChecked);
+    },
     toggleOpen() {
       const context = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)();
       context.isOpen = !context.isOpen;

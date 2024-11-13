@@ -14,6 +14,11 @@ const { state } = store( 'create-block', {
 		},
 	},
 	actions: {
+		updateCheckbox(){
+			const context = getContext();
+			context.isChecked = ! context.isChecked; 
+			console.log(context.isChecked); 
+		},
 		toggleOpen() {
 			const context = getContext();
 			context.isOpen = ! context.isOpen;

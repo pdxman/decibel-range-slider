@@ -12,6 +12,7 @@
   padding: 1em;
   border-radius: 10px;
   transition: all 0.5s ease;
+  color: #fff;
 }
 .wp-block-create-block-decibel-range-slider.dark-theme {
   background: #333;
@@ -28,6 +29,42 @@
 
 .decibel-slider-wrapper {
   transition: all 0.5s ease;
+}
+
+h2.decibel-number {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+#myRange {
+  border: none;
+}
+
+.meter-wrapper {
+  display: flex;
+  flex-flow: row;
+  gap: 0.25em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.meter {
+  height: 2em;
+  border-radius: 5px;
+  flex: 0 1 0.5em;
+}
+
+.meter-green {
+  background: green;
+}
+
+.meter-yellow {
+  background: yellow;
+}
+
+.meter-red {
+  background: red;
 }
 
 /*# sourceMappingURL=style-index.css.map*/

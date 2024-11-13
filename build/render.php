@@ -2,7 +2,8 @@
 
 $context = array(
 	'decibelValue' => 0,
-	'backgroundColor' => '#006400'
+	'backgroundColor' => '#006400',
+	'isChecked' => 'false'
 )
 
 ?>
@@ -14,7 +15,25 @@ $context = array(
 	data-wp-style--background="context.backgroundColor"
 	data-wp-on--input="actions.updateColor"
 >
-	<h2>Decibel Number <span id="decibelDisplay" data-wp-text="context.decibelValue"></span></h2>
+	<h2 class="decibel-number">Decibel Number <span id="decibelDisplay" data-wp-text="context.decibelValue"></span></h2>
+	<div class="meter-wrapper">
+			<div class="meter meter-green"></div>
+			<div class="meter meter-green"></div>
+			<div class="meter meter-green"></div>
+			<div class="meter meter-green"></div>
+			<div class="meter meter-green"></div>
+			<div class="meter meter-yellow"></div>
+			<div class="meter meter-yellow"></div>
+			<div class="meter meter-yellow"></div>
+			<div class="meter meter-yellow"></div>
+			<div class="meter meter-yellow"></div>
+			<div class="meter meter-red"></div>
+			<div class="meter meter-red"></div>
+			<div class="meter meter-red"></div>
+			<div class="meter meter-red"></div>
+			
+		</div>
+	<div>
 	<div>
   		<input 
 			id="myRange"
@@ -28,4 +47,14 @@ $context = array(
 			/>
   		<label for="volume">Volume</label>
 	</div>
+		<input 
+			type="checkbox" 
+			id="myCheckbox" 
+			name="myCheckbox"
+			data-wp-on--change="actions.updateCheckbox"
+			data-wp-bind--aria-expanded="context.isChecked"
+		>
+		<label for="myCheckbox">I agree to the terms and conditions</label>
+		<p data-wp-bind--hidden="context.isChecked">You have successfully agreed!</p>
+	</div>	
 </div>
