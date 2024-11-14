@@ -5,13 +5,25 @@ import { store, getContext } from '@wordpress/interactivity';
 
 window.addEventListener('load', () => {
     document.getElementById('myRange').value = 0;
+	document.getElementById('first-sound').value = 'Threshold of human hearing';
 });
+
+// window.addEventListener('load', () => {
+//     document.getElementById('myRange').value = 0;
+//     document.getElementById('firstSound').textContent = 'Threshold of human hearing';
+// });
+
+
 
 const { state } = store( 'create-block', {
 	state: {
 		get themeText() {
 			return state.isDark ? state.darkText : state.lightText;
 		},
+		// get getContext() {
+		// 	context.sounds = 'Threshold of human hearing';
+		// 	context.decibelValue = 0 ; 
+		// }
 	},
 	actions: {
 		updateCheckbox(){
@@ -33,6 +45,15 @@ const { state } = store( 'create-block', {
 			//animates indicator 
 			const percentage = Math.min(Math.ceil(context.decibelValue / 20) * 14, 100);
 			context.clipPath = `polygon(0 0, ${percentage}% 0, ${percentage}% 100%, 0 100%)`;
+
+			context.changed = !context.changed;
+			//console.log('changed?', context.changed); 
+
+			//updates sound with decibel increase 
+			const sounds = context.sounds; 
+			const soundIndex = Math.floor(context.decibelValue / 10) % sounds.length; // Calculate sound index based on height
+
+			context.sound = context.sound === '' ? 'Threshold of human hearing' : sounds[soundIndex];
 			
 		},
 		increaseCounter: () => {

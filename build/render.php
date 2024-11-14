@@ -4,7 +4,28 @@ $context = array(
 	'decibelValue' => 0,
 	'backgroundColor' => '#006400',
 	'isChecked' => 'false',
-	'clipPath' => 'polygon(0 0, 0 0, 0 100%, 0% 100%)'
+	'clipPath' => 'polygon(0 0, 0 0, 0 100%, 0% 100%)',
+	'changed' => 'false',
+	'sounds' => array(
+			//   "0" => "hello",
+			//   "1" => "hola",
+			//   "2" => "olá" 
+			"0" => "Threshold of human hearing",
+			"1" => "Breathing",
+			"2" => "Rustling leaves, ticking watch, whispering from 5 feet away",
+			"3" => "Whisper from nearby",
+			"4" => "Quiet library, average room noise",
+			"5" => "Certified quiet dishwasher",
+			"6" => "normal conversation, air conditioning unit",
+			"7" => "Vacuum cleaner, washing machine, average maximum television",
+			"8" => "Garbage disposal, food blender, alarm clock",
+			"9" => "Motorcycle at 25 feet, lawn mower, power tools, hair dryer",
+			"10" => "Dog's bark, snowmobile, hair dryer",
+			"11" => "Concert, Sporting events",
+			"12" => "Car horn, steel mill, siren",
+			"13" => "Jet taking off, jackhammer",
+			"14" => "Aircraft carrier deck, fireworks"
+		)
 )
 
 ?>
@@ -45,6 +66,12 @@ $context = array(
 			
 		</div>
 	<div>
+	<p 
+		id="firstSound"
+		class="sound" 
+		data-wp-text="context.sound"
+	></p>
+	<p id="second-sound"></p>
 	<div>
   		<input 
 			id="myRange"
