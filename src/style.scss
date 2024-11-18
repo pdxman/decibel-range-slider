@@ -39,9 +39,9 @@ h2.decibel-number{
 	margin-bottom: 0;
 }
 
-#myRange{
-	border: none; 
-}
+// #myRange{
+// 	border: none; 
+// }
 
 .meter-wrapper{
 	display: flex;
@@ -99,7 +99,10 @@ h2.decibel-number{
     height: 25px; /* height of slider */
     background: #fff ; /* orange background */
     outline: none; /* remove outline */
-    border-radius: 5px; /* round corners */
+    border-radius: 12px; /* round corners */
+	padding-left: .25em; 
+	padding-right: .25em; 
+	border: 2px solid orangered;
 }
 
 .slider::-webkit-slider-thumb {
