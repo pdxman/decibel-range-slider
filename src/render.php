@@ -23,7 +23,7 @@ $context = array(
 			"10" => "Dog's bark, snowmobile, hair dryer",
 			"11" => "Concert, Sporting events",
 			"12" => "Car horn, steel mill, siren",
-			"13" => "Jet taking off, jackhammer",
+			"13" => "Jet taking off",
 			"14" => "Aircraft carrier deck, fireworks"
 	),
 	'sound' => "Threshold of human hearing"
@@ -58,7 +58,7 @@ $context = array(
 			<div class="meter meter-yellow"></div>
 			<div class="meter meter-yellow"></div>
 			<div class="meter meter-yellow"></div>
-			<div class="meter meter-yellow"></div>
+			<div class="meter meter-yellow meter-eighty"></div>
 			<div class="meter meter-yellow"></div>
 			<div class="meter meter-red"></div>
 			<div class="meter meter-red"></div>
@@ -73,8 +73,10 @@ $context = array(
 		data-wp-text="context.sound"
 	></p>
 	<p id="second-sound"></p>
-	<div>
-  		<input 
+	<div class="slider-wrapper">
+		<label for="volume">Volume</label>
+		<input 
+			class="slider"
 			id="myRange"
 			type="range" 
 			id="volume" 
@@ -83,9 +85,8 @@ $context = array(
 			max="140"
 			value="context.decibelValue"
 			data-wp-on--input="actions.updateRange"
-			/>
-  		<label for="volume">Volume</label>
-	</div>
+		/>
+  	</div>
 		<input 
 			type="checkbox" 
 			id="myCheckbox" 

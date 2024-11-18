@@ -43,7 +43,7 @@ const { state } = store( 'create-block', {
 			context.decibelValue = event.target.value;  
 			
 			//animates indicator 
-			const percentage = Math.min(Math.ceil(context.decibelValue / 20) * 14, 100);
+			const percentage = Math.min(Math.ceil(context.decibelValue / 20) * 15, 100);
 			context.clipPath = `polygon(0 0, ${percentage}% 0, ${percentage}% 100%, 0 100%)`;
 
 			context.changed = !context.changed;
@@ -53,7 +53,7 @@ const { state } = store( 'create-block', {
 			const sounds = context.sounds; 
 			const soundIndex = Math.floor(context.decibelValue / 10) % sounds.length; // Calculate sound index based on height
 
-			context.sound = context.sound === '' ? 'Threshold of human hearing' : sounds[soundIndex];
+			context.sound = context.sound === '' ? '' : sounds[soundIndex];
 			
 		},
 		increaseCounter: () => {

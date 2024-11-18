@@ -44,16 +44,22 @@ h2.decibel-number {
   display: flex;
   flex-flow: row;
   gap: 0.25em;
-  width: 12em;
+  width: 100%;
+  padding-top: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
   transition: clip-path 0.5s ease;
 }
 
 .meter {
-  height: 2em;
+  height: 6em;
   border-radius: 5px;
-  flex: 0 1 0.5em;
+  flex: 0 1 3em;
+}
+
+.meter.meter-eighty {
+  height: 7em;
+  transform: translateY(-0.5em);
 }
 
 .meter-green {
@@ -66,4 +72,30 @@ h2.decibel-number {
 
 .meter-red {
   background: red;
+}
+
+.slider-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; /* removes browser-specific styling */
+  width: 88%; /* width of slider */
+  height: 25px; /* height of slider */
+  background: #fff; /* orange background */
+  outline: none; /* remove outline */
+  border-radius: 5px; /* round corners */
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none; /* removes browser-specific styling */
+  width: 20px; /* handle width */
+  height: 20px; /* handle height */
+  border-radius: 50%; /* make it circular */
+  background: orangered; /* white color */
+  cursor: pointer; /* cursor on hover */
 }
