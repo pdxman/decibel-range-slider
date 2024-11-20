@@ -7,6 +7,11 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
+h3.sound {
+  font-size: 1.4rem;
+  color: #fff;
+}
+
 .wp-block-create-block-decibel-range-slider {
   font-size: 1em;
   padding: 1em;

@@ -67,11 +67,11 @@ $context = array(
 			
 		</div>
 	<div>
-	<p 
+	<h3 
 		id="firstSound"
 		class="sound" 
 		data-wp-text="context.sound"
-	></p>
+	></h3>
 	<p id="second-sound"></p>
 	<div class="slider-wrapper">
 		<label for="volume">Volume</label>
