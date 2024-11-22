@@ -88,18 +88,15 @@ h2.decibel-number {
   height: 25px; /* height of slider */
   background: #fff; /* orange background */
   outline: none; /* remove outline */
-  border-radius: 12px; /* round corners */
-  padding-left: 0.25em;
-  padding-right: 0.25em;
-  border: 2px solid orangered;
 }
 
-.slider::-webkit-slider-thumb {
+.slider::-webkit-slider-thumb,
+.slider::-moz-range-thumb {
   -webkit-appearance: none;
           appearance: none; /* removes browser-specific styling */
   width: 20px; /* handle width */
-  height: 20px; /* handle height */
-  border-radius: 50%; /* make it circular */
+  height: 100%; /* handle height */
+  border-radius: 0; /* make it circular */
   background: orangered; /* white color */
   cursor: pointer; /* cursor on hover */
 }
