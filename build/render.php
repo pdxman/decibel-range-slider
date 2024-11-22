@@ -10,7 +10,7 @@ $context = array(
 			//   "0" => "hello",
 			//   "1" => "hola",
 			//   "2" => "olá" 
-			"0" => "Threshold of human hearing",
+			"0" => "\u{1F60A} Threshold of human hearing",
 			"1" => "Breathing",
 			"2" => "Rustling leaves, ticking watch, whispering from 5 feet away",
 			"3" => "Whisper from nearby",
@@ -22,11 +22,11 @@ $context = array(
 			"9" => "Motorcycle at 25 feet, lawn mower, power tools, hair dryer",
 			"10" => "Dog's bark, snowmobile, hair dryer",
 			"11" => "Concert, Sporting events",
-			"12" => "Car horn, steel mill, siren",
-			"13" => "Jet taking off",
+			"12" => "\u{1F697} Car horn, steel mill, siren",
+			"13" => "jackhammer, \u{2708}\u{FE0F} Jet taking off",
 			"14" => "Aircraft carrier deck, fireworks"
 	),
-	'sound' => "Threshold of human hearing"
+	'sound' => "\u{1F60A} Threshold of human hearing"
 )
 
 ?>
