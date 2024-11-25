@@ -110,10 +110,11 @@ h2.decibel-number{
 .slider::-webkit-slider-thumb{
 	appearance: none; 
 	width: 20px; 
-	height: 100%; 
-	border-radius: 0; 
+	height: 150%; 
+	border-radius: 5px; 
 	background: orangered; 
 	cursor: pointer; 
+	transform: translateY(-.5em); 
   }
 
 .slider::-moz-range-thumb {
@@ -124,6 +125,7 @@ h2.decibel-number{
   background: orangered; 
   cursor: pointer; 
   border-radius: 5px;
+  
 }
 
 .slider::-webkit-slider-runnable-track {

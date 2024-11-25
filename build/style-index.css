@@ -95,10 +95,11 @@ h2.decibel-number {
   -webkit-appearance: none;
           appearance: none;
   width: 20px;
-  height: 100%;
-  border-radius: 0;
+  height: 150%;
+  border-radius: 5px;
   background: orangered;
   cursor: pointer;
+  transform: translateY(-0.5em);
 }
 
 .slider::-moz-range-thumb {
