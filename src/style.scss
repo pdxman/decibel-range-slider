@@ -98,24 +98,64 @@ h2.decibel-number{
 
 //range slider styles 
 .slider {
-    appearance: none; /* removes browser-specific styling */
-    width: 88%; /* width of slider */
-    height: 25px; /* height of slider */
-    background: #fff ; /* orange background */
-    outline: none; /* remove outline */
-    // border-radius: 12px; /* round corners */
-	// padding-left: .25em; 
-	// padding-right: .25em; 
-// 	border: 2px solid orangered;
- }
-
-.slider::-webkit-slider-thumb,
-.slider::-moz-range-thumb {
-  appearance: none; /* removes browser-specific styling */
-  width: 20px; /* handle width */
-  height: 100%; /* handle height */
-  border-radius: 0; /* make it circular */
-  background: orangered; /* white color */
-  cursor: pointer; /* cursor on hover */
+    appearance: none; 
+	-webkit-appearance: none;
+    width: 88%; 
+    height: 25px; 
+    background: #fff ; 
+    outline: none; 
+    border-radius: 0 ; 
 }
+
+.slider::-webkit-slider-thumb{
+	appearance: none; 
+	width: 20px; 
+	height: 100%; 
+	border-radius: 0; 
+	background: orangered; 
+	cursor: pointer; 
+  }
+
+.slider::-moz-range-thumb {
+  appearance: none; 
+  width: 20px; 
+  height: 150%;
+  border-radius: 0; 
+  background: orangered; 
+  cursor: pointer; 
+  border-radius: 5px;
+}
+
+.slider::-webkit-slider-runnable-track {
+	-webkit-appearance: none; /* removes default track styling */
+	appearance: none;
+	background: #fff; /* track background color */
+	height: 100%; /* track height */
+  }
+
+// .slider {
+// 	-webkit-appearance: none;
+// 	appearance: none;
+// 	width: 100%; /* Full-width slider */
+// 	height: 8px; /* Track height */
+// 	background: #ccc; /* Track background */
+// 	outline: none; /* Removes focus outline */
+//   }
+  
+//   .slider::-webkit-slider-thumb {
+// 	-webkit-appearance: none; /* removes browser-specific styling */
+// 	appearance: none;
+// 	width: 20px; /* handle width */
+// 	height: 20px; /* handle height */
+// 	border-radius: 50%; /* make it circular */
+// 	background: orangered; /* thumb color */
+// 	cursor: pointer; /* cursor on hover */
+//   }
+  
+//   .slider::-webkit-slider-runnable-track {
+// 	-webkit-appearance: none; /* removes default track styling */
+// 	appearance: none;
+// 	background: #ddd; /* track background color */
+// 	height: 4px; /* track height */
+//   }
 

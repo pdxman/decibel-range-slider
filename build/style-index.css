@@ -81,24 +81,42 @@ h2.decibel-number {
 }
 
 .slider {
+  -moz-appearance: none;
+       appearance: none;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none; /* removes browser-specific styling */
-  width: 88%; /* width of slider */
-  height: 25px; /* height of slider */
-  background: #fff; /* orange background */
-  outline: none; /* remove outline */
+  width: 88%;
+  height: 25px;
+  background: #fff;
+  outline: none;
+  border-radius: 0;
 }
 
-.slider::-webkit-slider-thumb,
-.slider::-moz-range-thumb {
+.slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-          appearance: none; /* removes browser-specific styling */
-  width: 20px; /* handle width */
-  height: 100%; /* handle height */
-  border-radius: 0; /* make it circular */
-  background: orangered; /* white color */
-  cursor: pointer; /* cursor on hover */
+          appearance: none;
+  width: 20px;
+  height: 100%;
+  border-radius: 0;
+  background: orangered;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  -moz-appearance: none;
+       appearance: none;
+  width: 20px;
+  height: 150%;
+  border-radius: 0;
+  background: orangered;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.slider::-webkit-slider-runnable-track {
+  -webkit-appearance: none; /* removes default track styling */
+  appearance: none;
+  background: #fff; /* track background color */
+  height: 100%; /* track height */
 }
 
 /*# sourceMappingURL=style-index.css.map*/
