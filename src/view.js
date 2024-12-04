@@ -57,7 +57,12 @@ const { state } = store( 'create-block', {
 			
 		},
 		updateTestNumber: () => {
-			console.log('BIG Generator!')
+			const context = getContext();
+			function getRandomNumber(min, max) {
+				return Math.floor(Math.random() * (max - min + 1)) + min;
+			  }
+			const randomNumber = getRandomNumber(1, 140);
+			context.testNumber = randomNumber; 
 		},
 		increaseCounter: () => {
             const context = getContext();

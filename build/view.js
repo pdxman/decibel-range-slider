@@ -114,7 +114,12 @@ const {
       context.sound = context.sound === '' ? '' : sounds[soundIndex];
     },
     updateTestNumber: () => {
-      console.log('BIG Generator!');
+      const context = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)();
+      function getRandomNumber(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+      const randomNumber = getRandomNumber(1, 140);
+      context.testNumber = randomNumber;
     },
     increaseCounter: () => {
       const context = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)();

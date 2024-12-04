@@ -1,6 +1,7 @@
 <?php
 
 $context = array(
+	'testNumber' => 30,
 	'decibelValue' => 0,
 	'backgroundColor' => '#006400',
 	'isChecked' => 'false',
@@ -98,7 +99,7 @@ $context = array(
 		<p data-wp-bind--hidden="context.isChecked">You have successfully agreed!</p>
 	</div>	
 	<div>
-		<h2>Decibel Number Generator</h2>
+		<h2 class="test-number">Decibel Number Generator <span data-wp-text="context.testNumber"></span></h2>
 		<button data-wp-on--click="actions.updateTestNumber">Generate</button>
 	</div>
 </div>
