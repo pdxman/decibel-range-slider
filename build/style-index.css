@@ -114,10 +114,10 @@ h2.decibel-number {
 }
 
 .slider::-webkit-slider-runnable-track {
-  -webkit-appearance: none; /* removes default track styling */
+  -webkit-appearance: none;
   appearance: none;
-  background: #fff; /* track background color */
-  height: 100%; /* track height */
+  background: #fff;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style-index.css.map*/

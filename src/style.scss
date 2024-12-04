@@ -12,7 +12,6 @@
 
 .wp-block-create-block-decibel-range-slider {
 	font-size: 1em;
-	// background: orangered;
 	padding: 1em;
 	border-radius: 10px; 
 	transition: all .5s ease; 
@@ -42,10 +41,6 @@ h2.decibel-number{
 	color: #fff ; 
 	margin-bottom: 0;
 }
-
-// #myRange{
-// 	border: none; 
-// }
 
 .meter-wrapper{
 	display: flex;
@@ -81,15 +76,6 @@ h2.decibel-number{
 .meter-red{
 	background: red;
 }
-
-// #decibelDisplay {
-// 	opacity: 0; 
-// 	transition: opacity 1s ease;
-// }
-
-// #decibelDisplay.fadeoutin{
-// 	opacity: 1; 
-// }
 
 .slider-wrapper{
 	display: flex;
@@ -129,35 +115,9 @@ h2.decibel-number{
 }
 
 .slider::-webkit-slider-runnable-track {
-	-webkit-appearance: none; /* removes default track styling */
+	-webkit-appearance: none; 
 	appearance: none;
-	background: #fff; /* track background color */
-	height: 100%; /* track height */
-  }
-
-// .slider {
-// 	-webkit-appearance: none;
-// 	appearance: none;
-// 	width: 100%; /* Full-width slider */
-// 	height: 8px; /* Track height */
-// 	background: #ccc; /* Track background */
-// 	outline: none; /* Removes focus outline */
-//   }
-  
-//   .slider::-webkit-slider-thumb {
-// 	-webkit-appearance: none; /* removes browser-specific styling */
-// 	appearance: none;
-// 	width: 20px; /* handle width */
-// 	height: 20px; /* handle height */
-// 	border-radius: 50%; /* make it circular */
-// 	background: orangered; /* thumb color */
-// 	cursor: pointer; /* cursor on hover */
-//   }
-  
-//   .slider::-webkit-slider-runnable-track {
-// 	-webkit-appearance: none; /* removes default track styling */
-// 	appearance: none;
-// 	background: #ddd; /* track background color */
-// 	height: 4px; /* track height */
-//   }
+	background: #fff; 
+	height: 100%;
+}
 
