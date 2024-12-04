@@ -56,6 +56,9 @@ const { state } = store( 'create-block', {
 			context.sound = context.sound === '' ? '' : sounds[soundIndex];
 			
 		},
+		updateTestNumber: () => {
+			console.log('BIG Generator!')
+		},
 		increaseCounter: () => {
             const context = getContext();
             context.counter++;
@@ -65,8 +68,7 @@ const { state } = store( 'create-block', {
             context.counter--;
         },
 		updateColor: () => {
-  
-			const context = getContext();
+  			const context = getContext();
 			const colors = [
 				{ max: 20, color: '#006400' },
 				{ max: 40, color: '#3A5F0B' },

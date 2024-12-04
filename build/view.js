@@ -113,6 +113,9 @@ const {
 
       context.sound = context.sound === '' ? '' : sounds[soundIndex];
     },
+    updateTestNumber: () => {
+      console.log('BIG Generator!');
+    },
     increaseCounter: () => {
       const context = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)();
       context.counter++;

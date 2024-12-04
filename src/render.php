@@ -97,4 +97,8 @@ $context = array(
 		<label for="myCheckbox">I agree to the terms and conditions</label>
 		<p data-wp-bind--hidden="context.isChecked">You have successfully agreed!</p>
 	</div>	
+	<div>
+		<h2>Decibel Number Generator</h2>
+		<button data-wp-on--click="actions.updateTestNumber">Generate</button>
+	</div>
 </div>
